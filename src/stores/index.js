@@ -1,7 +1,7 @@
 import app from './app';
-import counter from './counter';
+import suggestion from './suggestion';
 
 export {
   app,
-  counter
+  suggestion
 };

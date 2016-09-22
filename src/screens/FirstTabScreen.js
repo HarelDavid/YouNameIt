@@ -8,7 +8,7 @@ import {
   Alert
 } from 'react-native';
 import { observer } from 'mobx-react/native';
-import { counter } from '../stores';
+import { suggestion} from '../stores';
 
 
 // this is a traditional React component connected wrapped in an observer function
@@ -17,14 +17,14 @@ export default class FirstTabScreen extends Component {
   constructor(props) {
     super(props);
 
-    this.counter = counter;
+    this.suggestion = suggestion;
   }
 
   render() {
     return (
       <View style={{flex: 1, padding: 20}}>
         <Text style={styles.text}>
-          <Text style={{fontWeight: '500'}}>Same Counter: </Text> {this.counter.count}
+          <Text style={{fontWeight: '500'}}>Same Counter: </Text> {this.suggestion.count}
         </Text>
 
         <TouchableOpacity onPress={ this.onIncrementPress.bind(this) }>

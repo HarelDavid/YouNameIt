@@ -1,8 +1,8 @@
 import { observable } from 'mobx';
 
 
-class CounterStore {
-  @observable count = 0;
+class SuggestionStore {
+  @observable Suggestions = [];
 
   constructor() {}
 
@@ -15,4 +15,4 @@ class CounterStore {
   }
 }
 
-export default new CounterStore();
+export default new SuggestionStore();
